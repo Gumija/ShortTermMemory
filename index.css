@@ -1,0 +1,25 @@
+.correct{
+    color: green;
+    display: none;
+}
+
+.incorrect{
+    color: red;
+    display: none;
+}
+
+#items{
+    height: 100px;
+    font-size: 50;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#questionBox{
+    visibility: hidden;
+}
+
+#taskBox{
+    visibility: hidden;
+}

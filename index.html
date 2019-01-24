@@ -1,0 +1,37 @@
+<html>
+<header>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="index.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/solid.js" integrity="sha384-F4BRNf3onawQt7LDHDJm/hwm3wBtbLIfGk1VSB/3nn3E+7Rox1YpYcKJMsmHBJIl"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/fontawesome.js" integrity="sha384-treYPdjUrP4rW5q82SnECO7TPVAz4bpas16yuE9F5o7CeBn2YYw1yr5oC8s8Mf8t"
+        crossorigin="anonymous"></script>
+</header>
+
+<body>
+    <div>
+        <button onclick="startNew()">Start a new round</button>
+        <p id="counter">0/12</p>
+        <!-- <span class="fas fa-square"></span> -->
+        <div id="items">
+            <p id="number">-</p>
+            <div id="image"></div>
+        </div>
+        <div id="taskBox">
+            <p class="question"></p>
+            <input type="text" class="answer" onkeypress="if (event.keyCode == 13) { submitTaskAnswer(); return false; }" />
+            <button onclick="submitTaskAnswer()">Submit</button>
+            <p class="correct">The answer is correct</p>
+            <p class="incorrect">The answer is incorrect</p>
+        </div>
+        <div id="questionBox">
+            <p class="question"></p>
+            <input type="text" class="answer" onkeypress="if (event.keyCode == 13) { submitQuestionAnswer(); return false; }" />
+            <button onclick="submitQuestionAnswer()">Submit</button>
+            <p class="correct">The answer is correct</p>
+            <p class="incorrect">The answer is incorrect</p>
+        </div>
+    </div>
+</body>
+
+</html>
